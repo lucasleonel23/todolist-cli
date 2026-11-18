@@ -1,0 +1,13 @@
+# Dependências
+node_modules/
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Logs
+npm-debug.log*
