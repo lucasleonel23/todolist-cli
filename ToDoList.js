@@ -13,10 +13,12 @@ function adicionarTarefa() {
 }
 
 function listarTarefas() {
+    if (tarefas.length === 0) {
+        console.log('\nNenhuma tarefa cadastrada.');
+        return;
+    }
     console.log('Tarefas:\n');
-    tarefas.forEach((tarefa, index) => {const status = tarefa.status ? 'Concluída' : 'Pendente';
-        console.table(tarefas);}
-    );
+    console.table(tarefas);
 }
 
 function marcarComoConcluida() {
